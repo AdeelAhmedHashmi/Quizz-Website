@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    user-select: none;
+    background-image: radial-gradient(rgb(2, 78, 2), rgb(50, 77, 250));
+}
+.container{
+    height: max(50vh, 350px) ;
+    width: max(40vw ,250px) ;
+    background-color: rgb(41, 197, 96);
+    position: relative;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+body h1{
+    margin-bottom: 10px;
+    background: conic-gradient(from 40deg, hsl(60, 64%, 78%), rgb(243, 20, 124), rgb(99, 173, 243), rgba(89, 202, 85, 0.993),orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.options{
+    padding: 5px 10px;
+    margin: 15px 10px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+}
+button{
+    padding: 5px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: blue;
+    color: beige;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(0, 0, 171);
+}
+h2{
+    margin: 0 10px;
+    font-size: 1.7rem;
+}
+.question{
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+h3{
+    padding-left: 10px;
+}
+#restart{
+    padding: 10px 20px;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    box-shadow: 2px 2px 30px 30px rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    animation: updown 1s infinite linear;
+    display: none;
+}
+@keyframes updown {
+    0%{
+        transform:translate(-50%,-50%) scale(1);
+    }   
+    50%{
+        transform:translate(-50%,-50%) scale(1.02);
+    } 
+    100%{
+        transform:translate(-50%,-50%) scale(1);
+    }
+}

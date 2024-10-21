@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" href="./fav.ico" type="image/x-icon">
+    <!-- Google Data  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Private Data  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body class="bg-black col-black all-flex flex-col">
+    <h1>Quiz App</h1>
+    <div class="container border box-shadow">
+        <h2 class="countQuestion">1</h2>
+        <div class="question alg-center 
+        border-round box-shadow">What is the largest city of the world ?</div>
+        <div id="opt1" class="border-round options cursor hover">Option 01</div>
+        <div id="opt2" class="border-round options cursor hover">Option 02</div>
+        <div id="opt3" class="border-round options cursor hover">Option 03</div>
+        <button class="full-width bottom btnHover">Next</button>
+    </div>
+    <form>
+        <button type="submit" class="btnHover" id="restart">Try Again!</button>
+    </form>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</html>
